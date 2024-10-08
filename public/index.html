@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoX Wormhole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>NeoX T4 Wormhole Transfer</h1>
+    <form id="wormholeForm">
+        <label for="fromAddress">Your NeoX T4 Address:</label>
+        <input type="text" id="fromAddress" required><br>
+
+        <label for="toChain">Select Target Chain:</label>
+        <select id="toChain">
+            <option value="Ethereum">Ethereum</option>
+            <option value="BSC">Binance Smart Chain</option>
+        </select><br>
+
+        <label for="toAddress">Target Chain Address:</label>
+        <input type="text" id="toAddress" required><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" step="0.01" required><br>
+
+        <button type="submit">Initiate Wormhole Transfer</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
